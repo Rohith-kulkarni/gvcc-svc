@@ -7,7 +7,7 @@ const db = await open({
 });
 
 await db.exec(`
-  CREATE TABLE IF NOT EXISTS users (
+  CREATE TABLE IF NOT EXISTS admins (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     password_hash TEXT NOT NULL,
